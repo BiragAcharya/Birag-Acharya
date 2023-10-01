@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example.css">
+    <title>Chocolate Blog</title>
+</head>
+<body>
+    <header>
+        <h1>HELLO! WELCOME TO MY BLOG</h1>
+    </header>
+    <main>
+        <div class="blog-post">
+            <p>
+                Chocolate is a delicious treat loved by people all over the world. Its rich, sweet flavor makes it a popular choice for desserts and snacks.
+            </p>
+        </div>
+        <div class="blog-section">
+            <h2>Types of Chocolate</h2>
+            <p>
+                There are several types of chocolate, including dark chocolate, milk chocolate, and white chocolate. Dark chocolate is known for its intense cocoa flavor, while milk chocolate is sweeter and creamier.
+            </p><br><br>
+            <h2>Health Benefits</h2>
+            <p>
+                Despite its reputation as a guilty pleasure, chocolate has some surprising health benefits. It contains antioxidants that can improve heart health and reduce stress. However, it should be consumed in moderation.
+            </p>
+        </div>
+        <div class="comment-section">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@(gmail\.com|edu\.np|yahoo\.com)">
+                </div>
+                <div>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comments">
+                <!-- Comments will be displayed here using JavaScript -->
+            </div>
+        </div>
+    </main>
+    <script src="example.js"></script>
+
+    <footer>
+        <p>&copy; 2023 Chocolate. All Rights Reserved</p>
+    </footer>
+
+
+</body>
+</html>
